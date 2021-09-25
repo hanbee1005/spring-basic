@@ -5,9 +5,17 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class BeanDefinitionTest {
+    // FactoryBean 사용
     AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+
+    // 직접 빈 등록
+    // GenericXmlApplicationContext ac = new GenericXmlApplicationContext("appConfig.xml");
+
+    // ApplicationContext ac = new GenericXmlApplicationContext("appConfig.xml"); 로 할 경우
+    // getBeanDefinition() 사용 불가...
 
     @Test
     @DisplayName("빈 설정 메타정보 확인")
