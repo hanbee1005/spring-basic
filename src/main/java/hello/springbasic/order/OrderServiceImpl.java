@@ -1,5 +1,6 @@
 package hello.springbasic.order;
 
+import hello.springbasic.annotation.MainDiscountpolicy;
 import hello.springbasic.discount.DiscountPolicy;
 import hello.springbasic.member.Member;
 import hello.springbasic.member.MemberRepository;
@@ -14,7 +15,7 @@ public class OrderServiceImpl implements OrderService {
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountpolicy DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
