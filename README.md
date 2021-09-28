@@ -8,5 +8,18 @@
 - Gradle
 
 ## 프로젝트 전체 구조
+- 회원 도메인
+    - 협력 관계
+    <img src="/src/main/resources/images/member-domain-01.png" width="750" height="250">
+    
+    - 클래스 다이어그램
+    <img src="/src/main/resources/images/member-domain-02.png" width="750" height="250">
+
+- 주문 도메인
+    - 협력 관계
+    <img src="/src/main/resources/images/order-domain-01.png" width="750" height="500">
+    
+    - 클래스 다이어그램
+    <img src="/src/main/resources/images/order-domain-02.png" width="750" height="500">
 
 ## 프로젝트 관심사
